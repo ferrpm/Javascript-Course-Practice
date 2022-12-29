@@ -27,3 +27,10 @@ console.log(population > 6);
 console.log(population < 33);
 const description = `${country} is in ${continent}, and it's ${population} million people speak ${language}.`
 console.log(description);
+
+// LECTURE: Taking Decisions: if / else Statements
+if (population > 33) {
+    console.log(`${country}'s population is above average.`);
+}else {
+    console.log(`${country}'s population is ${33 - population} millon below average.`);
+}
