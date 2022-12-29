@@ -43,11 +43,18 @@ console.log('123' < 57); // -> false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 
 // LECTURE: Equality Operators: == vs. ===
-let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
-if (numNeighbours === 1) {
-    console.log('Only 1 border!');
-} else if (numNeighbours > 1) {
-    console.log('Mora than 1 border!');
+// let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+// if (numNeighbours === 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('Mora than 1 border!');
+// } else {
+//     console.log('No borders!');
+// }
+
+// LECTURE: Logical Operators
+if ((language === 'english') && (population < 50) && !isIsland) {
+    console.log(`You should live in ${country}`);
 } else {
-    console.log('No borders!');
+    console.log(`${country} does not meet your criteria :(`)
 }
