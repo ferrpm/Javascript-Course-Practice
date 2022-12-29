@@ -94,3 +94,11 @@ function describeCountry(country, population, capitalCity) {
 const descCostaRica = describeCountry('Costa Rica', 5, 'San José');
 const descFinland = describeCountry('Finland', 6, 'Helsinki');
 console.log(descCostaRica, descFinland);
+
+// LECTURE: Function Declarations vs. Expressions
+const percentageOfWorld1 = function (population) {
+    return (population / 7900) * 100;
+}
+
+const percCostaRica = percentageOfWorld1(6);
+console.log(percCostaRica);
