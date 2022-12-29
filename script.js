@@ -102,3 +102,8 @@ const percentageOfWorld1 = function (population) {
 
 const percCostaRica = percentageOfWorld1(6);
 console.log(percCostaRica);
+
+// LECTURE: Arrow Functions
+const calcAge = birthYear => 2037 - birthYear;
+
+const percentageOfWorld3 = population => (population / 7900) * 100;
