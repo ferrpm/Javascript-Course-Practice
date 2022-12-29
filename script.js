@@ -85,3 +85,12 @@
 // console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average.`);
 
 // JavaScript Fundamentals – Part 2 
+
+// LECTURE: Functions
+function describeCountry(country, population, capitalCity) {
+    return (`${country} has ${population} million people and it's capital city is ${capitalCity}`);
+}
+
+const descCostaRica = describeCountry('Costa Rica', 5, 'San José');
+const descFinland = describeCountry('Finland', 6, 'Helsinki');
+console.log(descCostaRica, descFinland);
