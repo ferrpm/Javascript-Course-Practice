@@ -141,3 +141,12 @@ if (!neighbours.includes('Germany')) {
 
 neighbours[neighbours.indexOf('Nicaragua')] = `Republic of ${neighbours[neighbours.indexOf('Nicaragua')]}`;
 console.log(neighbours);
+
+// LECTURE: Introduction to Objects
+const myCountry = {
+    country: 'Costa Rica',
+    capital: 'San José',
+    language: 'Español',
+    population: 5,
+    neighbours: ['Panamá', 'Nicaragua']
+};
