@@ -146,7 +146,17 @@ console.log(neighbours);
 const myCountry = {
     country: 'Costa Rica',
     capital: 'San José',
-    language: 'Español',
+    language: 'spanish',
     population: 5,
     neighbours: ['Panamá', 'Nicaragua']
 };
+
+// LECTURE: Dot vs. Bracket Notation
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people,
+${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+console.log(myCountry.population);
