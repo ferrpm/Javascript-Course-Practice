@@ -160,3 +160,26 @@ console.log(myCountry.population);
 
 myCountry['population'] -= 2;
 console.log(myCountry.population);
+
+// LECTURE: Object Methods
+const myCountry2 = {
+    country: 'Costa Rica',
+    capital: 'San José',
+    language: 'spanish',
+    population: 5,
+    neighbours: ['Panamá', 'Nicaragua'],
+    describe: function() {
+        console.log(`${myCountry2.country} has ${myCountry2.population} ${myCountry2.language}-speaking people,
+        ${myCountry2.neighbours.length} neighbouring countries and a capital called ${myCountry2.capital}.`);
+    },
+    checkIsland: function() {
+       this.isIsland = this.neighbours.length === 0 ? true : false; 
+
+        // Even simpler version (see why this works...)
+        // this.isIsland = !Boolean(this.neighbours.length);
+    }
+};
+
+myCountry2.describe();
+myCountry2.checkIsland();
+console.log(myCountry2);
