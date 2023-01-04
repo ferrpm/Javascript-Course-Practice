@@ -107,3 +107,13 @@ console.log(percCostaRica);
 const calcAge = birthYear => 2037 - birthYear;
 
 const percentageOfWorld3 = population => (population / 7900) * 100;
+
+// LECTURE: Functions Calling Other Functions
+const describePopulation = function (country, population) {
+    const percentage = percentageOfWorld1(population);
+    const description = `${country} has ${population} million people, 
+    which is about ${percentage}% of the world.`;
+    console.log(description)
+}
+
+describePopulation('Costa Rica', 5);
