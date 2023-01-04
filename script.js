@@ -128,3 +128,16 @@ const percentages = [
     percentageOfWorld1(populations[3])
 ];
 console.log(percentages);
+
+// LECTURE: Basic Array Operations (Methods)
+const neighbours = ['Panamá', 'Nicaragua', 'Rusia'];
+neighbours.push('México');
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes('Germany')) {
+    console.log('Probably not a central European country :D');
+}
+
+neighbours[neighbours.indexOf('Nicaragua')] = `Republic of ${neighbours[neighbours.indexOf('Nicaragua')]}`;
+console.log(neighbours);
